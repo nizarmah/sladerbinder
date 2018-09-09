@@ -1,0 +1,64 @@
+@media print {
+    html, body { 
+        height: auto;
+        overflow: hidden; 
+    }
+
+    body > :not(.container), 
+    .container > :not(.content), 
+    .content > :not(.left), 
+    .left > :not(.solutions-list),
+    .solutions-list > :not(.page-section) {
+        display: none !important;
+    }
+
+    header, footer,
+    .page-section-meta-data a {
+        display: none !important;
+    }
+
+    .solution.user-content {
+        border: none !important;
+        box-shadow: none !important;
+    }
+    
+    .container section.content.inner {
+        padding-top: 0px !important;
+        padding-bottom: 0px !important;
+    }
+    .content > .left {
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+    .left > .solutions-list {
+        margin-top: 0px !important;
+    }
+    
+    .container > .content .page-section {
+        margin-top: 30px !important;
+        margin-bottom: 0px !important;
+        page-break-inside: avoid;
+        height: unset !important;
+        min-height: unset !important;
+    }
+
+    .solution-row.explanation-row,
+    .solution-cell.explanation {
+        page-break-inside: avoid;
+    }
+    
+    .solution-row.explanation-row { display: block !important; }
+    .delete-row-options.delete-row-column { display: none; }
+    .solution-cell.explanation { 
+        border-right: none !important;
+        border-left: none !important; 
+    }
+
+    img {
+        max-width: 80% !important;
+    }
+    
+    @page {
+        size: A4 portrait;
+    }
+}
