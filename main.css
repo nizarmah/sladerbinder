@@ -54,6 +54,14 @@
         border-left: none !important; 
     }
 
+    .solution-cell.result {
+        border: none !important;
+    }
+
+    .solution-content {
+        background-color: transparent !important;
+    }
+
     img {
         max-width: 80% !important;
     }
