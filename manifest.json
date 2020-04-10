@@ -2,7 +2,7 @@
     "manifest_version": 2,
     "name": "Slader Binder - Slader CheatSheet PDF Creator",
     "short_name": "Slader Binder",
-    "version": "1.2",
+    "version": "1.3",
     "icons": {
         "128": "icon.png"
     },
@@ -11,7 +11,7 @@
             "background.js"
         ]
     },
-    "browser_action": {
+    "page_action": {
         "default_icon": "icon.png",
         "default_title": "Click to Create PDF"
     },
